@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:context="com.example.palani.creditcard.MainActivity">
+
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Crad Balance $"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffffff"
+        android:textColor="#ffff00"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Yearly Interest Rate(%)"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffff"
+        android:id="@+id/editText2"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Final Card Balance"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffff"
+        android:id="@+id/editText3"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Minimum Payment ($)"
+        android:textColor="#ffffff"
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffff"
+        android:id="@+id/editText4"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Months Remaning"
+        android:textColor="#ffffff"
+        android:id="@+id/textView5"
+        tools:layout_editor_absoluteY="95dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffff"
+        android:id="@+id/editText5"
+        tools:layout_editor_absoluteY="208dp"
+        tools:layout_editor_absoluteX="143dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Interest Paid Will Be ($)"
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText5"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:inputType="number"
+        android:ems="10"
+        android:background="#ffff"
+        android:id="@+id/editText6"
+        tools:layout_editor_absoluteY="324dp"
+        tools:layout_editor_absoluteX="153dp"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/editText5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPUTE"
+        android:ems="5"
+        android:id="@+id/button"
+        android:layout_above="@+id/button2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/button2"
+        android:ems="5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
